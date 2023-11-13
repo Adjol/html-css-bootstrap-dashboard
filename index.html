@@ -1,390 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+      <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <!-- FONT AWSOME -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   </head>
+   <body>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <!-- top fixed navbar -->
 
-    <!-- FONT AWSOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
-</head>
-<body>
-    <!-- top fixed navbar -->
-
-    
-    <nav class="navbar navbar-inverse sticky-top bg-white">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">WebSiteName</a>
-          </div>
-
-
-          <form class="navbar-form" action="#">
-            <div class="input-group">
-
-              <input type="text" class="form-control" placeholder="Search" name="search">
-              <div class="input-group-btn">
-                <button type="button" class="btn btn-default">Submit</button>
-              </div>
-              
+      <nav class="navbar navbar-inverse sticky-top bg-white">
+         <div class="container-fluid">
+            <div class="navbar-header">
+              <img src="img33/img/mobile-logo.png" class="mobile_logo" alt="">
+               <a class="navbar-brand" href="#">Boolean</a>
             </div>
-          </form>
-          
+            <form class="navbar-form" action="#">
+               <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="search">
+                  <div class="input-group-btn">
+                     <button type="button" class="btn"><i class="fas fa-search"></i></button>
+                  </div>
+               </div>
+            </form>
+            <ul class="nav navbar-nav flex-row">
+               <li class="active"><a href="#"><i class="fa-solid fa-list-ul"></i></a></li>
+               <li><a href="#"><i class="fa-solid fa-question"></i></a></li>
+               <li><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
 
-          <ul class="nav navbar-nav flex-row">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-          </ul>
-
-
-
-
-
-        </div>
+               <div class="dropdown">
+                <button class="btn btn-light text-warning " type="button"  data-bs-toggle="dropdown" >
+                  <i class="fa-solid fa-bell"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </ul>
+         </div>
       </nav>
 
+      <!-- sidebar -->
 
+      <div class="container-fluid">
+         <div class="row flex-nowrap h-100">
 
+            <div class="col-auto col-sm-2  px-sm-2 px-0">
+              <!-- <div class="ms_background_img"></div> -->
 
+               <div class="d-flex flex-column align-items-start align-items-sm-start h-100 px-1 pt-2 text-white ms_full_height ms_background_img">
+                  <a href="#" class="d-flex align-items-center pb-3 mb-md-0  text-white text-decoration-none">
 
-    <!-- sidebar -->
+                  <span class="fs-5 d-none d-sm-inline">Menu</span>
+                  </a>
 
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-1 px-sm-2 px-0 bg-dark">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white">
-                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                        <span class="fs-5 d-none d-sm-inline">Menu</span>
-                    </a>
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link align-middle px-0">
-                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
-                            <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
-                        </li>
-                        <li>
-                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
-                                <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 3</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 4</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
-                        </li>
-                    </ul>
-                    <hr>
-                    <div class="dropdown pb-4">
-                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
-                            <span class="d-none d-sm-inline mx-1">loser</span>
+                  <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                     
+                    <li class="nav-item">
+                        <a href="#" class="nav-link align-middle px-0">
+                          <i class="fa-solid fa-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                            <li><a class="dropdown-item" href="#">New project...</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
-                    </div>
-                </div>
+                     </li>
+
+                     <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                          <i class="fa-solid fa-chart-simple"></i> <span class="ms-1 d-none d-sm-inline">Stats</span> </a>
+
+                        
+                     </li>
+
+                     <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                          <i class="fa-solid fa-signal"></i> <span class="ms-1 d-none d-sm-inline">Signals</span></a>
+                     </li>
+                  </ul>
+                  <hr>
+
+                  <div class="dropdown pb-4 sticky-bottom">
+                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"  data-bs-toggle="dropdown" >
+                      <i class="fa-solid fa-gear"></i>
+
+                     <span class="d-none d-sm-inline mx-1">Admin</span>
+                     </a>
+
+
+                     <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                           <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-            <div class="col-lg-11  p-0">
-
-                <!-- main header section -->
-
-                <section >
-                    <div id="ms_row_modify" class="row bg-primary ">
-
-                        <div class="col-4 ms_col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque itaque beatae quas ipsa. Laborum molestias temporibus repudiandae minima quam velit a totam pariatur obcaecati. Modi aperiam veniam assumenda ratione?</div>
-                        <div class="col-4 ms_col">Lorem ipsum dolor sit amet consectetur?<br>
-                        1232s</div>
-                        <div class="col-4 ms_col">Lorem ipsum dolor </div>
-
-                    </div>
-                </section>
-
-
-
-            <!----------------------------- main ----------->
-
-                <!-- main center -->
-
-                <section class="ms_d_flex">
-                    <!-- main central content -->
-
-                    <!------------------------- classes table -->
-                    <div class="row">
-                        <div class="col-lg-8">
-                        
-                            <div class="ms_mar-int_box">
-                                <table class="table table-sm table-hover">
-                                <div class="table_top"><h2>Prossime classi</h2></div>
-                                <thead>
-                                  <tr>
-                                    <th class="col-4">Nome</th>
-                                    <th class="col-2">Data Inizio</th>
-                                    <th class="col-2">ROI</th>
-                                    <th class="col-2">Stato</th>
-                                    <th class="col-2">Azioni</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td class="row"><img src="img(33)/img/class-avatar.jpg" id="class-avatar" alt="class-avatar">Classe 75</td>
-                                    <td>15 Feb 2021</td>
-                                    <td>20%</td>
-                                    <td><div class="badge bg-success">Done</div></td>
-                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="row"><img src="img(33)/img/class-avatar.jpg" id="class-avatar" alt="">Classe 76</td>
-                                    <td>16 Feb 2021</td>
-                                    <td>20%</td>
-                                    <td><div class="badge bg-success">Done</div></td>
-                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="row"><img src="img(33)/img/class-avatar.jpg" id="class-avatar" alt="">Classe 77</td>
-                                    <td>17 Feb 2021</td>
-                                    <td>20%</td>
-                                    <td><div class="badge bg-warning">Done</div></td>
-                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="row"><img src="img(33)/img/class-avatar.jpg" id="class-avatar" alt="">Classe 78</td>
-                                    <td>18 Feb 2021</td>
-                                    <td>20%</td>
-                                    <td><div class="badge bg-success">Done</div></td>
-                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="row"><img src="img(33)/img/class-avatar.jpg" id="class-avatar" alt="">Classe 79</td>
-                                    <td>19 Feb 2021</td>
-                                    <td>20%</td>
-                                    <td><div class="badge bg-danger">Done</div></td>
-                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="row"><img src="img(33)/img/class-avatar.jpg" id="class-avatar" alt="">Classe 80</td>
-                                    <td>20 Feb 2021</td>
-                                    <td>20%</td>
-                                    <td><div class="badge bg-success">Done</div></td>
-                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="row"><img src="img(33)/img/class-avatar.jpg" id="class-avatar" alt="">Classe 81</td>
-                                    <td>21 Feb 2021</td>
-                                    <td>20%</td>
-                                    <td><div class="badge bg-danger">Done</div></td>
-                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="row"><img src="img(33)/img/class-avatar.jpg" id="class-avatar" alt="">Classe 82</td>
-                                    <td>22 Feb 2021</td>
-                                    <td>20%</td>
-                                    <td><div class="badge bg-success">Done</div></td>
-                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
-                                  </tr>
-                                  <td class="row"></td>
-                                  <td colspan="2"></td>
-                                  <td></td>
-                                </tr>
-                                </tbody>
-                                </table>
-                            </div>
-                        
-                                    <!------------------ F.A.Q. BOX--------- -->
-                            <div class="ms_mar-int_box">
-                                <div class="accordion" id="accordionExample1">
-                                    <div class="table_top"><h2>F.A.Q</h2></div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header " id="heading1">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                          Elemento Accordion #1
-                                        </button>
-                                      </h2>
-                                      <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading1">
-                                        <div class="accordion-body">
-                                          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header " id="heading2">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                          Elemento Accordion #2
-                                        </button>
-                                      </h2>
-                                      <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading2">
-                                        <div class="accordion-body">
-                                          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header " id="heading3">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                          Elemento Accordion #3
-                                        </button>
-                                      </h2>
-                                      <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading3">
-                                        <div class="accordion-body">
-                                          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
-                                        </div>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="col-md-10 col-sm-9">
+               <!-- main header section -->
+               <section >
+                  <div  class="row bg-primary text-light">
+                     <div class="col-4">
+                      <h1>Boolean</h1>
+                      
+                      
                     </div>
 
+                     <div class="col-4 ms_header_text
+                     "><h4>Studenti online negli ultimi 30 min</h4>
+                      
+                      <div class="numb_style">125</div>
+                      
+                     </div>
 
-                    <!-- aside column --------------------------------------->
+                     <div class="col-4 ms_header_text
+                     ">Nuovo studente 
 
-                    
-                    <div class="col-lg-4">
-                         <!-- todo list------------- -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="card card-white ms_mar-int_box_t_b">
-                                        <div class="card-body">
-                                            <div class="todo-list">
-                                                <div class="todo-item d-flex">
-                                                    <div class="checker ms_mar-right"><span class=""><input type="checkbox"></span></div>
-                                                    <span>Create theme</span>
-                                                </div>
-                                                <div class="todo-item d-flex">
-                                                    <div class="checker ms_mar-right"><span class=""><input type="checkbox"></span></div>
-                                                    <span>Work on wordpress</span>
-                                                </div>
-                    
-                                                <div class="todo-item d-flex">
-                                                    <div class="checker ms_mar-right"><span class=""><input type="checkbox"></span></div>
-                                                    <span>Organize office main department</span>
-                                                </div>
-                                                <div class="todo-item d-flex">
-                                                    <div class="checker ms_mar-right"><span><input type="checkbox"></span></div>
-                                                    <span>Error solve in HTML template</span>
-                                                </div>
+                     <span>
+                   
+                      
+                      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-regular fa-square-plus"></i></button>
+
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                          <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div class="container-fluid px-1 py-5 mx-auto">
+                            <div class="row d-flex justify-content-center">
+                                <div class=" col-11 text-center">
+                                   
+                                    <div class="row col-12">
+                                        
+                                        <form class="form" onsubmit="event.preventDefault()">
+                                            <div class="row justify-content-between text-left">
+                                                <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nome<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Enter your first name" onblur="validate(1)"> </div>
+                                                <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Cognome<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="Enter your last name" onblur="validate(2)"> </div>
                                             </div>
-                                        </div>
+                                            <div class="row justify-content-between text-left">
+                                                <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">email<span class="text-danger"> *</span></label> <input type="text" id="email" name="email" placeholder="" onblur="validate(3)"> </div>
+                                                <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Password</label> <input type="password" id="mob" name="mob" placeholder="Password" > </div>
+                                            </div>
+                                            <div class="row justify-content-between text-left">
+                                                <div class="form-group col-sm-12 flex-column d-flex"> <label class="form-control-label px-3">indirizzo</label> <input type="text" id="job" name="job" placeholder="" > </div>
+                                            </div>
+
+                                            <div class="row_">
+                                              <div class="row justify-content-between text-left">
+                                                  <div class="form-group col-6 flex-column d-flex"> <label class="form-control-label px-3">Città<span class="text-danger"> </span></label> <input type="text" id="ans" name="ans" placeholder="" onblur="validate(6)"> </div>
+                                              </div>
+
+                                              <div class="row justify-content-between text-left">
+                                                <div class="form-group col-4 flex-column d-flex"> <label class="form-control-label px-3">stato<span class="text-danger"> </span></label> <input type="text" id="ans" name="ans" placeholder="" onblur="validate(6)"> </div>
+                                              </div>
+
+                                            </div>
+                        
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
 
-                          <!-- statistics -->
-                        <div class="card  ms_mar-int_box">
-                            <div class="card-header">
-
-                                <div class="graph_img"  >
-                                    <img src="https://picsum.photos/1428/1036" class="img-fluid">
-                                </div>
-
-                            </div>
 
 
-                            <ul class="list-group list-group-flush">
+
+                          
+                        </div>
+                      </div>
+
+                    </span>
+
+                    </div>
+                  </div>
+               </section>
+               <!----------------------------- main ----------->
+
+               <!-- main center -->
+
+               <section class="ms_d_flex">
+
+                  <!-- main central content -->
+                  
+                  <!------------------------- classes table -->
+                  <div class="row">
+                     <div class="col-lg-8 col-md-12 col-sm-12">
+                        <div class="ms_mar-int_box">
+                           <table class="table table-sm table-hover">
+                              <div class="table_top">
+                                 <h2>Prossime classi</h2>
+                              </div>
+                              <thead>
+                                 <tr>
+                                    <th class="col-4">Nome</th>
+                                    <th class="col-2 hidden_small">Data Inizio</th>
+                                    <th class="col-2 hidden_small">ROI</th>
+                                    <th class="col-2">Stato</th>
+                                    <th class="col-2">Azioni</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td class="row"><img src="img33/img/class-avatar.jpg" id="class-avatar" alt="class-avatar">Classe 75</td>
+                                    <td class="hidden_small">15 Feb 2021</td>
+                                    <td class="hidden_small">20%</td>
+                                    <td>
+                                       <div class="badge bg-success">Done</div>
+                                    </td>
+                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="row"><img src="img33/img/class-avatar.jpg" id="class-avatar" alt="">Classe 76</td>
+                                    <td class="hidden_small">16 Feb 2021</td>
+                                    <td class="hidden_small">20%</td>
+                                    <td>
+                                       <div class="badge bg-success">Done</div>
+                                    </td>
+                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="row"><img src="img33/img/class-avatar.jpg" id="class-avatar" alt="">Classe 77</td>
+                                    <td class="hidden_small">17 Feb 2021</td>
+                                    <td class="hidden_small">20%</td>
+                                    <td>
+                                       <div class="badge bg-warning">Done</div>
+                                    </td>
+                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="row"><img src="img33/img/class-avatar.jpg" id="class-avatar" alt="">Classe 78</td>
+                                    <td class="hidden_small">18 Feb 2021</td>
+                                    <td class="hidden_small">20%</td>
+                                    <td>
+                                       <div class="badge bg-success">Done</div>
+                                    </td>
+                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="row"><img src="img33/img/class-avatar.jpg" id="class-avatar" alt="">Classe 79</td>
+                                    <td class="hidden_small">19 Feb 2021</td>
+                                    <td class="hidden_small">20%</td>
+                                    <td>
+                                       <div class="badge bg-danger">Done</div>
+                                    </td>
+                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="row"><img src="img33/img/class-avatar.jpg" id="class-avatar" alt="">Classe 80</td>
+                                    <td class="hidden_small">20 Feb 2021</td>
+                                    <td class="hidden_small">20%</td>
+                                    <td>
+                                       <div class="badge bg-success">Done</div>
+                                    </td>
+                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="row"><img src="img33/img/class-avatar.jpg" id="class-avatar" alt="">Classe 81</td>
+                                    <td class="hidden_small">21 Feb 2021</td>
+                                    <td class="hidden_small">20%</td>
+                                    <td>
+                                       <div class="badge bg-danger">Done</div>
+                                    </td>
+                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="row"><img src="img33/img/class-avatar.jpg" id="class-avatar" alt="">Classe 82</td>
+                                    <td class="hidden_small">22 Feb 2021</td>
+                                    <td class="hidden_small">20%</td>
+                                    <td>
+                                       <div class="badge bg-success">Done</div>
+                                    </td>
+                                    <td><i class="fa-solid fa-square-pen"></i><i class="fa-solid fa-trash"></i></td>
+                                 </tr>
+
+                              </tbody>
+                           </table>
+                        </div>
+                        <!------------------ F.A.Q. BOX--------- -->
+                        <div class="ms_mar-int_box">
+                           <div class="accordion" id="accordionExample1">
+                              <div class="table_top">
+                                 <h2>F.A.Q</h2>
+                              </div>
+                              <div class="accordion-item">
+                                 <h2 class="accordion-header " id="heading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    Elemento Accordion #1
+                                    </button>
+                                 </h2>
+                                 <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading1">
+                                    <div class="accordion-body">
+                                       Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="accordion-item">
+                                 <h2 class="accordion-header " id="heading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    Elemento Accordion #2
+                                    </button>
+                                 </h2>
+                                 <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading2">
+                                    <div class="accordion-body">
+                                       Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="accordion-item">
+                                 <h2 class="accordion-header " id="heading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    Elemento Accordion #3
+                                    </button>
+                                 </h2>
+                                 <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading3">
+                                    <div class="accordion-body">
+                                       Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- aside column --------------------------------------->
+
+                     <div class="col-lg-4 col-md-12 col-sm-12">
+
+                        <!-- todo list------------- -->
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-sm-10 col-lg-10 ">
+                                 <div class="card card-white ms_mar-int_box_t_b">
+                                    <div class="card-body">
+                                       <div class="todo-list">
+                                          <div class="table_top">
+                                             <h2>ToDo</h2>
+                                          </div>
+                                          <div class="todo-item d-flex">
+                                             <div class="checker ms_mar-right"><span><input type="checkbox"></span></div>
+                                             <span>KickOff nuove classi</span>
+                                          </div>
+                                          <div class="todo-item d-flex">
+                                             <div class="checker ms_mar-right"><span><input type="checkbox"></span></div>
+                                             <span>Lezione su Bootstrap 5 in classe #75</span>
+                                          </div>
+                                          <div class="todo-item d-flex">
+                                             <div class="checker ms_mar-right"><span><input type="checkbox"></span></div>
+                                             <span>Controllare username github studenti</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- statistics -->
+                        <div class="card  ms_mar-int_box col-lg-10">
+                           <div class="card-header">
+                              <div class="graph_img"  >
+                                 <img src="img33/img/stats.jpeg" class="img-fluid">
+                              </div>
+                           </div>
+                           <ul class="list-group list-group-flush">
                               <li class="list-group-item">Cras justo odio</li>
                               <li class="list-group-item">Dapibus ac facilisis in</li>
                               <li class="list-group-item">Vestibulum at eros</li>
-                            </ul>
-                          </div>
+                           </ul>
                         </div>
-                    </div>
-
-                      
-
-
-
-
-                </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
+                     </div>
+                  </div>
+               </section>
             </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+         </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   </body>
 </html>
