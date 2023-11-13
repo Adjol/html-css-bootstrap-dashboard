@@ -1,0 +1,20 @@
+.navbar-form {
+    flex-grow: 1;
+}
+
+.table_top {
+    background-color: #f7f7f7;
+}
+
+.ms_mar-int_box {
+    margin: 1rem;
+}
+
+.ms_mar-right {
+    margin-right: .5rem !important;
+}
+
+/* .graph_img {
+    height: 100%;
+    width: 100%;
+} */
