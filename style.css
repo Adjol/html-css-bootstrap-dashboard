@@ -1,3 +1,9 @@
+
+body {
+    overflow-x: hidden;
+}
+
+
 .navbar-form {
     flex-grow: 1;
 }
@@ -10,9 +16,58 @@
     margin: 1rem;
 }
 
+
+.ms_mar-int_box_t_b {
+    margin-top: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+
+
 .ms_mar-right {
     margin-right: .5rem !important;
 }
+
+
+#ms_row_modify {
+    margin: 0;
+}
+
+
+#class-avatar {
+    width: 50px;
+}
+
+
+
+.fa-trash, .fa-square-pen {
+    color: gray;
+    font-size: 1.5rem;
+    margin: 0 .3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* .graph_img {
     height: 100%;
